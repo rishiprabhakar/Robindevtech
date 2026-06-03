@@ -126,11 +126,11 @@ const IndexPage = () => (
         </div>
         <div className="stats reveal">
           <div className="stat">
-            <div className="num">6+ yrs</div>
+            <div className="num">4+ yrs</div>
             <div className="lbl">Development experience</div>
           </div>
           <div className="stat">
-            <div className="num">40+</div>
+            <div className="num">10+</div>
             <div className="lbl">Projects delivered</div>
           </div>
           <div className="stat">
