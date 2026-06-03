@@ -4,8 +4,7 @@ export const SITE = {
   owner: "Robin Dev",
   role: "Web Developer & Designer",
   email: "hello@robindevtech.in",
-  // TODO: replace with a real reachable number (used on Contact page + tel: link)
-  phone: "+91 00000 00000",
+  phone: "+91 73407 72712",
   location: "India",
   url: "https://robindevtech.in",
   since: 2019,

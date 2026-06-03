@@ -5,6 +5,7 @@ import "../styles/robindevtech.css"
 
 const NAV = [
   { label: "Services", to: "/#services" },
+  { label: "Work", to: "/#portfolio" },
   { label: "About", to: "/#about" },
   { label: "Process", to: "/#process" },
   { label: "Contact", to: "/contact" },
@@ -118,8 +119,8 @@ const Layout = ({ children }) => {
           <div className="foot-col">
             <h5>Navigate</h5>
             <Link to="/#services">Services</Link>
+            <Link to="/#portfolio">Work</Link>
             <Link to="/#about">About</Link>
-            <Link to="/#process">Process</Link>
             <Link to="/contact">Contact</Link>
           </div>
 

@@ -73,6 +73,33 @@ const STEPS = [
   { t: "Support", b: "After launch, I stay on hand for updates, fixes and improvements as your needs grow." },
 ]
 
+const PORTFOLIO = [
+  {
+    name: "2ULaundry",
+    url: "https://2ulaundry.com/",
+    tag: "Backend Development",
+    client: "Alex",
+    country: "USA",
+    body: "Server-side development for an on-demand laundry pickup & delivery service — reliable backend logic, scheduling and third-party integrations.",
+  },
+  {
+    name: "XPT Trainer",
+    url: "https://thexpt.com/",
+    tag: "WordPress Maintenance",
+    client: "Brady Popping",
+    country: "USA",
+    body: "Ongoing WordPress maintenance for a fitness-equipment store — updates, security hardening, performance tuning and dependable uptime.",
+  },
+  {
+    name: "MyDygz",
+    url: "https://www.mydygz.com/",
+    tag: "Web Application",
+    client: "Lynda",
+    country: "USA",
+    body: "Web application work for an all-in-one life-management and organization platform with task, event and collaboration features.",
+  },
+]
+
 const IndexPage = () => (
   <Layout>
     <section className="hero">
@@ -134,6 +161,57 @@ const IndexPage = () => (
               <h3>{s.title}</h3>
               <p>{s.body}</p>
             </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" className="section section-alt">
+      <div className="wrap">
+        <div className="sec-head reveal">
+          <div className="sec-tag">Selected work</div>
+          <h2>Portfolio</h2>
+          <p>
+            A few recent projects delivered for clients in the United States
+            &mdash; spanning backend engineering, WordPress maintenance and web
+            applications.
+          </p>
+        </div>
+        <div className="work-grid">
+          {PORTFOLIO.map((w) => (
+            <a
+              className="work-card reveal"
+              key={w.url}
+              href={w.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="work-thumb">
+                <span className="thumb-fallback">{w.name}</span>
+                <img
+                  src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(
+                    w.url
+                  )}?w=1200`}
+                  alt={`${w.name} website preview`}
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none"
+                  }}
+                />
+              </div>
+              <div className="work-body">
+                <span className="work-tag">{w.tag}</span>
+                <h3>{w.name}</h3>
+                <p>{w.body}</p>
+                <div className="work-client">
+                  <span className="flag" role="img" aria-label="United States">
+                    &#127482;&#127480;
+                  </span>{" "}
+                  {w.client} &middot; {w.country}
+                </div>
+                <span className="work-link">Visit site &rarr;</span>
+              </div>
+            </a>
           ))}
         </div>
       </div>
