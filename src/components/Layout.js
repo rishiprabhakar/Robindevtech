@@ -59,9 +59,17 @@ const Layout = ({ children }) => {
       <header className="site-header">
         <div className="wrap">
           <nav>
-            <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>
-              <span className="dot"></span>
-              {SITE.name}
+            <Link
+              to="/"
+              className="brand-link"
+              aria-label={SITE.name}
+              onClick={() => setMenuOpen(false)}
+            >
+              <img
+                src="/robindevtech-logo.svg"
+                alt={SITE.name}
+                className="brand-logo"
+              />
             </Link>
 
             <button
@@ -106,10 +114,11 @@ const Layout = ({ children }) => {
       <footer className="site-footer">
         <div className="wrap foot-grid">
           <div className="foot-brand">
-            <div className="brand">
-              <span className="dot"></span>
-              {SITE.name}
-            </div>
+            <img
+              src="/robindevtech-logo.svg"
+              alt={SITE.name}
+              className="foot-logo"
+            />
             <p>{SITE.tagline}</p>
             <a href={`mailto:${SITE.email}`} className="foot-email">
               {SITE.email}

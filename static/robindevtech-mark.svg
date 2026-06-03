@@ -1,0 +1,15 @@
+<svg width="256" height="256" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RobinDevTech">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16202e"/><stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fe0d3"/><stop offset="1" stop-color="#38b2ac"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="url(#d)" stroke="#4fd1c5" stroke-opacity="0.18" stroke-width="1.5"/>
+  <path d="M22 46 V18 H37 A9 9 0 0 1 37 36 H26 L43 46" fill="none" stroke="#4fd1c5" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="22" cy="18" r="4.4" fill="url(#t)" stroke="#0a0e14" stroke-width="2"/>
+  <circle cx="22" cy="46" r="4.4" fill="url(#t)" stroke="#0a0e14" stroke-width="2"/>
+  <circle cx="43" cy="46" r="4.4" fill="url(#t)" stroke="#0a0e14" stroke-width="2"/>
+</svg>
