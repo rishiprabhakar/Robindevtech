@@ -1,8 +1,8 @@
-name: sample-gatsby
+name: robindevtech
 static_sites:
 - environment_slug: gatsby
   github:
     branch: main
     deploy_on_push: true
-    repo: digitalocean/sample-gatsby
-  name: sample-gatsby
+    repo: rishiprabhakar/Robindevtech
+  name: robindevtech

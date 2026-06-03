@@ -1,8 +1,8 @@
 spec:
-  name: sample-gatsby
+  name: robindevtech
   static_sites:
   - environment_slug: gatsby
     git:
       branch: main
-      repo_clone_url: https://github.com/digitalocean/sample-gatsby.git
-    name: sample-gatsby
+      repo_clone_url: https://github.com/rishiprabhakar/Robindevtech.git
+    name: robindevtech
