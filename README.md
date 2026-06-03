@@ -2,6 +2,9 @@
 
 This guide describes how to use DigitalOcean App Platform to run a sample Gatsby application.
 
+<!-- Test commit: verifying git push workflow. -->
+
+
 **Note**: Following these steps may result in charges for the use of DigitalOcean services.
 
 ### Requirements
