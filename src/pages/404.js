@@ -1,14 +1,18 @@
 import React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Link } from "gatsby"
+import "../styles/robindevtech.css"
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <section className="section" style={{ minHeight: "70vh", display: "grid", placeItems: "center", textAlign: "center" }}>
+    <div className="wrap">
+      <div className="sec-tag">Error 404</div>
+      <h1 style={{ fontSize: "clamp(2.4rem,6vw,4rem)", margin: "14px 0 16px" }}>Page not found</h1>
+      <p style={{ color: "var(--muted)", marginBottom: "28px" }}>The page you were looking for doesn&rsquo;t exist.</p>
+      <Link to="/" className="btn btn-primary">Back to home</Link>
+    </div>
+  </section>
 )
 
 export default NotFoundPage
+
+export const Head = () => <title>Page not found — RobinDevTech</title>
